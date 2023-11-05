@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info.change_name">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="197dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="89dp"
+        android:text="닉네임 변경"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/change_name_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/change_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="닉네임"
+        app:layout_constraintBottom_toTopOf="@+id/cheak_pw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/cheak_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="pw"
+        app:layout_constraintBottom_toTopOf="@+id/change_name"
+        app:layout_constraintStart_toStartOf="@+id/change_name_info"
+        app:layout_constraintTop_toBottomOf="@+id/change_name_info" />
+
+    <Button
+        android:id="@+id/change_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="279dp"
+        android:text="번경"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheak_pw" />
+</androidx.constraintlayout.widget.ConstraintLayout>

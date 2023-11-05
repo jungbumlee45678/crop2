@@ -1,0 +1,61 @@
+[후기]
+create table reviews (
+    num int AUTO_INCREMENT primary key,
+    boardid INT,
+    userid VARCHAR(20),
+    Content TEXT,
+    Method VARCHAR(20)
+);
+
+[찜목록]
+create table wishlist (
+    boardid int,
+    userid varchar(20)
+);
+
+[사기]
+create table fraud (
+    userid varchar(20),
+    content text,
+    time timestamp
+);
+
+[게시판]
+create table board (
+    num int AUTO_INCREMENT primary key,
+    video varchar(100),
+    photo varchar(100),
+    credit int,
+    title varchar(20),
+    content text,
+    category varchar(40),
+    views INT,
+    userid varchar(20),
+    username varchar(20),
+    Method varchar(20),
+    time timestamp
+);
+
+[직거래]
+create table directdeal (
+    boardid int,
+    location varchar(20)
+);
+========================
+[분류 카테고리]
+create table classification(
+    classification varchar(20)
+);
+
+[카테고리]
+create table category (
+    classification varchar(20),
+    category varchar(20)
+);
+
+[관심 카테고리]
+create table interestcategory (
+    userid varchar(20),
+    interest varchar(20)
+);
+

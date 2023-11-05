@@ -1,0 +1,43 @@
+[9, 4, 4, 5, 3] = 25
+
+INSERT INTO classification (classification) VALUES
+    ('의류'),
+    ('전자 제품'),
+    ('스포츠/레저'),
+    ('가구/인테리어'),
+    ('취미');
+
+INSERT INTO category (classification , category) VALUES
+    ('의류', '여성의류'),
+    ('의류', '여성 잡화'),
+    ('의류', '여성 속옷'),
+    ('의류', '남성 의류'),
+    ('의류', '남성 잡화'),
+    ('의류', '남성 속옷'),
+    ('의류', '캐주얼/유니섹스'),
+    ('의류', '명품'),
+    ('의류', '유아 용품');
+
+INSERT INTO category (classification, category) VALUES
+    ('전자 제품', '핸드폰'),
+    ('전자 제품', '태블릿/노트북'),
+    ('전자 제품', '컴퓨터'),
+    ('전자 제품', '가전 제품');
+
+INSERT INTO category (classification, category) VALUES
+    ('스포츠/레저', '여성 스포츠 의류'),
+    ('스포츠/레저', '남성 스포츠 의류'),
+    ('스포츠/레저', '스포츠 잡화'),
+    ('스포츠/레저', '스포츠용품');
+
+INSERT INTO category (classification, category) VALUES
+    ('가구/인테리어', '침구'),
+    ('가구/인테리어', '수납기구'),
+    ('가구/인테리어', '책상'),
+    ('가구/인테리어', '인테리어 소품'),
+    ('가구/인테리어', '도배용품');
+
+INSERT INTO category (classification, category) VALUES
+    ('취미', '게임'),
+    ('취미', '도서'),
+    ('취미', '악기');

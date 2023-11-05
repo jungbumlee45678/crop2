@@ -1,0 +1,6 @@
+COLLATE utf8mb4_general_ci : 한글 허용
+[username]
+
+ALTER DATABASE project COLLATE utf8mb4_general_ci; -> 새로운 규칙
+
+ALTER TABLE 테이블_이름 CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;

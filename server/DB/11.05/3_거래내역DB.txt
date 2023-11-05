@@ -1,0 +1,14 @@
+CREATE TABLE transactions (
+    boardid INT,
+    buyerid varchar(20),
+    salerid VARCHAR(20),
+    TransactionDate DATE
+);
+
+[거래내역 DB]
+CREATE TABLE 거래내역 (
+    게시판번호 INT,
+    구매자ID INT,
+    판매자ID INT,
+    거래일자 DATE
+);

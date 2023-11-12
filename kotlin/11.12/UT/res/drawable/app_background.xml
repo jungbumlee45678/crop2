@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gray" /> <!-- 텍스트뷰의 배경색 -->
+    <size android:width="100dp" android:height="100dp" /> <!-- 원의 크기를 설정 -->
+    <corners android:radius="100dp" /> <!-- 반지름 값을 설정 (반지름 = 지름 / 2) -->
+</shape>

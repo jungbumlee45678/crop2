@@ -1,0 +1,78 @@
+ALTER DATABASE project COLLATE utf8mb4_general_ci;
+
+CREATE TABLE alert (
+    userid VARCHAR(20),
+    boardid int
+);
+
+CREATE TABLE alarmkeyword (
+    keyword VARCHAR(20),
+    userid varchar(20)
+);
+
+create table board (
+    num int AUTO_INCREMENT primary key,
+    video varchar(100),
+    photo varchar(100),
+    credit int,
+    title varchar(20),
+    content text,
+    category varchar(40),
+    views INT default 0,
+    userid varchar(20),
+    Method varchar(20),
+    time timestamp
+);
+
+create table search(
+   userid varchar(20),
+   search varchar(20)
+);
+
+create table classification(
+    classification varchar(20),
+    image varchar(100)
+);
+
+create table category (
+    classification varchar(20),
+    category varchar(20)
+);
+
+create table interestcategory (
+    userid varchar(20),
+    interest varchar(20)
+);
+
+create table member(
+    userid varchar(20) not null,
+    userpw varchar(20) not null,
+    username varchar(20) not null,
+    address varchar(100) not null,
+    email varchar(100) not null,
+    profile varchar(100),
+    auth int default 0
+);
+
+create table authcode(
+    userid varchar(20),
+    code varchar(20)
+);
+
+create table conversation (
+    num int primary key,
+    boardid int
+);
+
+create table message (
+    num int AUTO_INCREMENT primary key,
+    conid int,
+    userid varchar(20),
+    content text,
+    time timestamp
+);
+
+create table participants (
+    conid int,
+    userid varchar(20)
+);

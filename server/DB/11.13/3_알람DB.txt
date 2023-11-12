@@ -1,0 +1,23 @@
+데이터베이스 나의 정보 알람
+
+CREATE TABLE alert (
+    userid VARCHAR(20),
+    boardid int
+);
+
+CREATE TABLE 알람 (
+    사용자_ID VARCHAR(20),
+    게시물번호 int
+);
+
++알람 키워드 최대 30개까지 받을수있는
+
+CREATE TABLE alarmkeyword (
+    keyword VARCHAR(20),
+    userid varchar(20)
+);
+
+CREATE TABLE 알람키워드 (
+    키워드 VARCHAR(20),
+    사용자ID varchar
+);

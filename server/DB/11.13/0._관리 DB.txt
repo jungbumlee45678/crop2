@@ -1,0 +1,43 @@
+=======================[회원]
+member [회원]
+authcode [인증코드(이메일)]
+=======================[게시판]
+reviews [후기]
+wishlist [찜목록]
+fraud [사기]
+board [게시판]
+directdeal [직거래]
+search [최근 검색]
+
+classification [분류 카테고리]
+category [카테고리]
+interestcategory [관심 카테고리]
+=======================[알람]
+alert [알람]
+alarmkeyword [알람키워드]
+=======================[채팅]
+conversation [대화 테이블]
+participants [참가자 테이블]
+message [메시지 테이블]
+=======================[거래내역]
+transactions [거래내역 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end

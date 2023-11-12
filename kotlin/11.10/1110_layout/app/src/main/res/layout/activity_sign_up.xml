@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="회원가입"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/profileImageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginLeft="46dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/SignUp_id"
+                android:layout_width="215dp"
+                android:layout_height="47.5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/square_lite_blue"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/SignUp_NiKname"
+                android:layout_width="215dp"
+                android:layout_height="47.5dp"
+                android:background="@drawable/square_lite_blue"
+                android:ems="10"
+                android:hint="닉네임"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/SignUp_pw"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/square_lite_blue"
+        android:ems="10"
+        android:hint="PW"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/SignUp_pw_r"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/square_lite_blue"
+        android:ems="10"
+        android:hint="PW 확인"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/SignUp_Email"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:background="@drawable/square_lite_blue"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="217.5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/square_lite_blue"
+            android:ems="10"
+            android:hint="주소"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/find_address"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/square_dark_blue"
+            android:text="찾기"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/SingUp_Button"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/square_dark_blue"
+        android:text="다음"/>
+</LinearLayout>

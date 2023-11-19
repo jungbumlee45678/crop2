@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">U.T</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_another">Another</string>
+    <string name="back_button_alt">Back</string>
+    <string name="audio">Audio</string>
+    <string name="camera">Camera</string>
+    <string name="capture">Capture</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="Resume">Resume</string>
+    <string name="Start">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

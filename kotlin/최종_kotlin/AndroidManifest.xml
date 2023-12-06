@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> <!-- 허용만들어야함 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UT"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".board.category"
+            android:exported="false" />
+        <activity
+            android:name=".chatting.chatting"
+            android:exported="false" />
+        <activity
+            android:name=".board.filter"
+            android:exported="false" />
+
+        <activity
+            android:name=".board.search_board"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <!--(2)키보드 이벤트 떄 레이아웃 움직임 고정-->
+
+        <activity
+            android:name=".alarm.alarm"
+            android:exported="false" />
+        <activity
+            android:name=".alarm.alarm_keyword"
+            android:exported="false" />
+        <activity
+            android:name=".info.purchase_history"
+            android:exported="false" />
+        <activity
+            android:name=".info.sale_history"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false" />
+        <activity
+            android:name=".board.board_info"
+            android:exported="false" />
+        <activity
+            android:name=".board.video_start"
+            android:exported="false" />
+        <activity
+            android:name=".info.change_address"
+            android:exported="false" />
+        <activity
+            android:name=".info.change_email"
+            android:exported="false" />
+        <activity
+            android:name=".info.change_name"
+            android:exported="false" />
+        <activity
+            android:name=".info.interest_thing"
+            android:exported="false" />
+        <activity
+            android:name=".board.write_page"
+            android:exported="false" />
+        <activity
+            android:name=".info.my_info"
+            android:exported="false" />
+        <activity
+            android:name=".info.change_info_before"
+            android:exported="false" />
+        <activity
+            android:name=".login.find_pw_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".login.find_id_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".login.show_find"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_page" />
+        <activity
+            android:name=".login.Sing_up_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".login.email_cheack"
+            android:exported="false" />
+        <activity
+            android:name=".board.search"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

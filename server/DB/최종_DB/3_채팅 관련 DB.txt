@@ -1,0 +1,21 @@
+[대화 테이블]
+create table conversation (
+    num int primary key,
+    boardid int
+);
+
+[참가자 테이블]
+create table participants (
+    conid int,
+    userid varchar(20),
+    num int
+);
+
+[메시지 테이블]
+create table message (
+    num int AUTO_INCREMENT primary key,
+    conid int,
+    userid varchar(20),
+    content text,
+    time timestamp
+);

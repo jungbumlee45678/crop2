@@ -1,0 +1,16 @@
+서버 폴더 비디오 정리
+=======================
+delete from member;
+delete from authcode;
+=======================
+delete from board;
+delete from search;
+=======================
+delete from alert;
+delete from alarmkeyword;
+=======================
+delete from conversation;
+delete from participants;
+delete frommessage;
+=======================
+delete frompurchase;

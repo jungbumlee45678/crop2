@@ -1,0 +1,48 @@
+[게시판]
+create table board (
+    num int AUTO_INCREMENT primary key,
+    path varchar(100),
+    credit int,
+    title varchar(20),
+    content text,
+    category varchar(40),
+    views INT default 0,
+    userid varchar(20),
+    state INT default 0,
+    time timestamp,
+    life INT default 1
+);
+
+[최근검색]
+create table search(
+   userid varchar(20),
+   search varchar(20),
+   time timestamp
+);
+
+//Time이랑 timestamp의 차이
+
+[구매내역]
+create table purchase(
+    num int,
+    boardid int,
+    userid varchar(20)
+);
+========================
+[분류 카테고리]
+create table classification(
+    classification varchar(20)
+);
+
+[카테고리]
+create table category (
+    classification varchar(20),
+    category varchar(20)
+);
+
+[관심 카테고리]
+create table interestcategory (
+    userid varchar(20),
+    interest varchar(20)
+);
+

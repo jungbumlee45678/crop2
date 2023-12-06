@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/alarm"
+        app:popupTheme="@style/YourPopupTheme"
+        app:title="알람 키워드" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/alarm_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+
+            android:ems="10"
+            android:hint="알람 키워드"
+            android:paddingStart="16dp"
+            android:background="@drawable/square_lite_blue"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/keyword_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="추가"
+            android:background="@drawable/square_dark_blue"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alarm_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ScrollView
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </org.apmem.tools.layouts.FlowLayout>
+    </ScrollView>
+</LinearLayout>

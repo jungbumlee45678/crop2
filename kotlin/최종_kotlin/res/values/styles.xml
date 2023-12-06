@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YourPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorSecondary">#FF0000</item> <!-- 아이콘의 색상을 변경하려면 여기에 해당하는 색상 코드를 넣어주세요 -->
+    </style>
+</resources>

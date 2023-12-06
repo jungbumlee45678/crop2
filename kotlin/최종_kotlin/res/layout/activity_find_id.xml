@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.find_id_Activity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/square_lite_blue"
+        android:ems="10"
+        android:hint="닉네임"
+        android:inputType="text"
+        android:paddingStart="16dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/square_lite_blue"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/findid"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:background="@drawable/square_lite_blue"
+        android:text="아이디 찾기"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+</LinearLayout>

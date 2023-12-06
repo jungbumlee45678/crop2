@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info.change_address"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/basic"
+        app:popupTheme="@style/YourPopupTheme"
+        app:title="주소 변경"
+        android:translationZ="2dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:paddingStart="16dp"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:background="@drawable/square_lite_blue"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/change_address_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:enabled="false"
+
+                android:hint="주소"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@android:color/transparent"/>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/change_address_find"
+            android:layout_gravity="center"
+            android:layout_width="102.5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/square_dark_blue"
+            android:text="찾기"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cheak_pw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="PW"
+
+        android:background="@color/light_blue"
+        android:padding="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/change_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:text="번경"/>
+
+</LinearLayout>

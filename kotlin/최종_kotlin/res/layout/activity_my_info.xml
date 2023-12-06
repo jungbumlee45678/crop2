@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".info.my_info">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/basic"
+        app:popupTheme="@style/YourPopupTheme"
+        app:title="내 정보"
+        android:translationZ="2dp"/>
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/baseline_person_24_blue"
+        android:background="@drawable/rounded_corner_border"
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_marginStart="60dp"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textSize="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:textColor="@color/dark_blue2"
+                android:id="@+id/my_id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="예시아이디"
+                android:textSize="20dp"
+                android:maxLines="1"/>
+        </HorizontalScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="60dp"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:textColor="@color/dark_blue2"
+                android:id="@+id/my_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="예시 닉네임"
+                android:clipChildren="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textSize="20dp" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/change_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:layout_marginEnd="10dp"
+            android:text="변경" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="60dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textSize="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:textColor="@color/dark_blue2"
+                android:id="@+id/my_email"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:clipChildren="true"
+                android:maxLines="1"
+
+                android:text="예시 이메일"
+                android:textSize="20dp"/>
+        </HorizontalScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_marginStart="60dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="주소"
+            android:textSize="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:textColor="@color/dark_blue2"
+                android:id="@+id/my_address"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="예시 주소"
+                android:maxLines="1"
+                android:clipChildren="true"
+                android:textSize="20dp"/>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/change_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/light_blue"
+            android:layout_marginEnd="10dp"
+            android:text="변경" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_pw"
+        android:layout_width="200dp"
+        android:background="@color/light_blue"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="비밀번호 변경" />
+</LinearLayout>

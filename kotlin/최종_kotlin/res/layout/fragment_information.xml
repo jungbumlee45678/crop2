@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/dark_blue"
+        app:menu="@menu/info_top"
+        app:popupTheme="@style/YourPopupTheme"
+        android:translationZ="5dp"
+        app:title="UT"/>
+
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#801E1E1E"
+
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:translationZ="3dp" />
+
+    <LinearLayout
+        android:id="@+id/smallLayout"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar"
+
+        android:translationZ="4dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+
+            android:text="TextView"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:background="@color/light_blue"
+
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+
+            android:text="로그아웃" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_person_24_blue"
+            android:background="@drawable/rounded_corner_border"
+            android:scaleType="centerCrop"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hor"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/Nikname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="예시닉네임"
+                android:textSize="20dp" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/my_info"
+            android:layout_width="132dp"
+            android:layout_height="39dp"
+
+            android:layout_gravity="center_vertical"
+            android:background="@color/dark_blue"
+            android:text="회원정보 보기" />
+    </LinearLayout>
+
+    <!-- Other Buttons -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/dark_blue"
+        android:layout_below="@+id/line"/>
+
+    <Button
+        android:id="@+id/gs_thing"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/line"
+        android:gravity="left|center_vertical"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:text="관심목록" />
+
+    <Button
+        android:id="@+id/sell_thing"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:textSize="20dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingStart="10dp"
+        android:layout_below="@+id/gs_thing"
+        android:text="판매내역" />
+
+    <Button
+        android:id="@+id/buy_thing"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:textSize="20dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingStart="10dp"
+        android:layout_below="@+id/sell_thing"
+        android:text="구매내역" />
+
+    <Button
+        android:id="@+id/key_word"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:textSize="20dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingStart="10dp"
+        android:layout_below="@+id/buy_thing"
+        android:text="알람 키워드" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/dark_blue"
+        android:layout_below="@+id/key_word"/>
+</RelativeLayout>
